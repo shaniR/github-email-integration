@@ -4,6 +4,7 @@ import ballerina/log;
 import wso2/choreo.sendemail as email;
 
 configurable github:ListenerConfig config = ?;
+
 configurable string recipientAddress = ?;
 
 listener http:Listener httpListener = new(8090);
